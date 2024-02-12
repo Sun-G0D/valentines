@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- TODO: ADD TIMER ITEM OF HOW LONG SINCE STARTED DATING -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin:  0;
+            padding:  0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-image: url('path-to-your-header-background.jpg');
+            height:  200px;
+            color: white;
+            text-align: center;
+            padding:  50px  0;
+        }
+        h1 {
+            font-size:  2em;
+        }
+        .timeline {
+            max-width:  800px;
+            margin:  50px auto;
+            position: relative;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width:  2px;
+            background-color: #ff69b4; /* Pink */
+            top:  0;
+            bottom:  0;
+            left:  50%;
+        }
+        .timeline-item {
+            padding:  10px  40px;
+            position: relative;
+            background-color: white;
+            border-radius:  5px;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width:  10px;
+            height:  10px;
+            right: -5px;
+            background-color: #ff69b4; /* Pink */
+            border:  2px solid white;
+            border-radius:  50%;
+            top:  50%;
+            transform: translateY(-50%);
+        }
+        img {
+            width:  100%;
+            height: auto;
+        }
+        .caption {
+            margin-top:  10px;
+            font-style: italic;
+        }
+        @media screen and (max-width:  600px) {
+            .timeline {
+                padding:  0  20px;
+            }
+            h1 {
+                font-size:  1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Love Story</h1>
+    </header>
+    <div class="timeline">
+        <!-- Repeat this div block for each timeline item -->
+        <div class="timeline-item">
+            <img src="path-to-your-image.jpg" alt="Description of the image">
+            <div class="caption">This is a caption for the image.</div>
+        </div>
+        <!-- End of timeline item -->
+    </div>
+    <script>
+        // Add any JavaScript functionality here, such as smooth scrolling or animations
+    </script>
+</body>
+</html>
