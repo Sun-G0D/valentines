@@ -1,93 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- TODO: ADD TIMER ITEM OF HOW LONG SINCE STARTED DATING -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Love Story</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin:  0;
-            padding:  0;
-            background-color: #f8f8f8;
-        }
-        header {
-            background-image: url('path-to-your-header-background.jpg');
-            height:  200px;
-            color: white;
-            text-align: center;
-            padding:  50px  0;
-        }
-        h1 {
-            font-size:  2em;
-        }
-        .timeline {
-            max-width:  800px;
-            margin:  50px auto;
-            position: relative;
-        }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            width:  2px;
-            background-color: #ff69b4; /* Pink */
-            top:  0;
-            bottom:  0;
-            left:  50%;
-        }
-        .timeline-item {
-            padding:  10px  40px;
-            position: relative;
-            background-color: white;
-            border-radius:  5px;
-        }
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            width:  10px;
-            height:  10px;
-            right: -5px;
-            background-color: #ff69b4; /* Pink */
-            border:  2px solid white;
-            border-radius:  50%;
-            top:  50%;
-            transform: translateY(-50%);
-        }
-        img {
-            width:  100%;
-            height: auto;
-        }
-        .caption {
-            margin-top:  10px;
-            font-style: italic;
-        }
-        @media screen and (max-width:  600px) {
-            .timeline {
-                padding:  0  20px;
-            }
-            h1 {
-                font-size:  1.5em;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Our Love Story</h1>
-    </header>
-    <div class="timeline">
-        <!-- Repeat this div block for each timeline item -->
-        <div class="timeline-item">
-            <img src="path-to-your-image.jpg" alt="Description of the image">
-            <div class="caption">This is a caption for the image.</div>
-        </div>
-        <!-- End of timeline item -->
-        <div class="timeline-item">
-            <img src="path-to-your-image.jpg" alt="Description of the image">
-            <div class="caption">This is a caption for the image.</div>
-        </div>
+    <div id="falling-hearts">
+        <div class="heart" style="animation: 18s ease-in 0s infinite normal none running spin; top: 21vh; left: 16vw; font-size: 47px; color: rgb(255, 204, 204);">♥</div>
+        <div class="heart" style="animation: 9s ease-in 0s infinite normal none running spin; top: 23vh; left: 93vw; font-size: 57px; color: rgb(238, 102, 102);">♥</div>
+        <div class="heart" style="animation: 12s ease-in 0s infinite normal none running spin; top: 28vh; left: 18vw; font-size: 39px; color: rgb(221, 0, 0);">♡</div>
+        <div class="heart" style="animation: 17s ease-in 0s infinite normal none running spin; top: 5vh; left: 55vw; font-size: 49px; color: rgb(238, 102, 102);">♥</div>
+        <div class="heart" style="animation: 13s ease-in 0s infinite normal none running spin; top: 21vh; left: 10vw; font-size: 39px; color: rgb(238, 102, 102);">♡</div>
+        <div class="heart" style="animation: 12s ease-in 0s infinite normal none running spin; top: 11vh; left: 38vw; font-size: 27px; color: rgb(221, 0, 0);">♡</div>
+        <div class="heart" style="animation: 18s ease-in 0s infinite normal none running spin; top: 21vh; left: 24vw; font-size: 22px; color: rgb(221, 0, 0);">♡</div>
+        <div class="heart" style="animation: 19s ease-in 0s infinite normal none running spin; top: 10vh; left: 95vw; font-size: 31px; color: rgb(221, 0, 0);">♥</div>
+        <div class="heart" style="animation: 7s ease-in 0s infinite normal none running spin; top: 35vh; left: 36vw; font-size: 39px; color: rgb(238, 102, 102);">♡</div>
+        <div class="heart" style="animation: 12s ease-in 0s infinite normal none running spin; top: 32vh; left: 21vw; font-size: 42px; color: rgb(221, 0, 0);">♡</div>
+        <div class="heart" style="animation: 18s ease-in 0s infinite normal none running spin; top: 7vh; left: 15vw; font-size: 22px; color: rgb(255, 204, 204);">♡</div>
+        <div class="heart" style="animation: 13s ease-in 0s infinite normal none running spin; top: 28vh; left: 94vw; font-size: 49px; color: rgb(255, 204, 204);">♥</div>
+        <div class="heart" style="animation: 14s ease-in 0s infinite normal none running spin; top: 30vh; left: 19vw; font-size: 30px; color: rgb(238, 102, 102);">♥</div>
+        <div class="heart" style="animation: 18s ease-in 0s infinite normal none running spin; top: 32vh; left: 3vw; font-size: 21px; color: rgb(238, 102, 102);">♡</div>
+        <div class="heart" style="animation: 8s ease-in 0s infinite normal none running spin; top: 15vh; left: 72vw; font-size: 57px; color: rgb(221, 0, 0);">♥</div>
+        <div class="heart" style="animation: 18s ease-in 0s infinite normal none running spin; top: 1vh; left: 52vw; font-size: 43px; color: rgb(255, 204, 204);">♡</div>
+        <div class="heart" style="animation: 18s ease-in 0s infinite normal none running spin; top: 33vh; left: 36vw; font-size: 27px; color: rgb(255, 204, 204);">♡</div>
+        <div class="heart" style="animation: 7s ease-in 0s infinite normal none running spin; top: 12vh; left: 21vw; font-size: 40px; color: rgb(238, 102, 102);">♡</div>
+        <div class="heart" style="animation: 11s ease-in 0s infinite normal none running spin; top: 18vh; left: 64vw; font-size: 44px; color: rgb(221, 0, 0);">♥</div>
+        <div class="heart" style="animation: 9s ease-in 0s infinite normal none running spin; top: 14vh; left: 54vw; font-size: 26px; color: rgb(255, 204, 204);">♡</div>
+        <div class="heart" style="animation: 7s ease-in 0s infinite normal none running spin; top: 2vh; left: 1vw; font-size: 45px; color: rgb(221, 0, 0);">♥</div>
+        <div class="heart" style="animation: 14s ease-in 0s infinite normal none running spin; top: 11vh; left: 10vw; font-size: 48px; color: rgb(221, 0, 0);">♡</div>
+        <div class="heart" style="animation: 15s ease-in 0s infinite normal none running spin; top: 21vh; left: 34vw; font-size: 30px; color: rgb(255, 204, 204);">♥</div>
+        <div class="heart" style="animation: 19s ease-in 0s infinite normal none running spin; top: 10vh; left: 42vw; font-size: 45px; color: rgb(238, 102, 102);">♥</div>
+        <div class="heart" style="animation: 9s ease-in 0s infinite normal none running spin; top: 9vh; left: 73vw; font-size: 57px; color: rgb(238, 102, 102);">♥</div>
+        <div class="heart" style="animation: 6s ease-in 0s infinite normal none running spin; top: 7vh; left: 67vw; font-size: 26px; color: rgb(238, 102, 102);">♥</div>
+        <div class="heart" style="animation: 18s ease-in 0s infinite normal none running spin; top: 5vh; left: 70vw; font-size: 42px; color: rgb(255, 204, 204);">♡</div>
+        <div class="heart" style="animation: 9s ease-in 0s infinite normal none running spin; top: 0vh; left: 46vw; font-size: 20px; color: rgb(255, 204, 204);">♥</div>
+        <div class="heart" style="animation: 13s ease-in 0s infinite normal none running spin; top: 20vh; left: 54vw; font-size: 47px; color: rgb(221, 0, 0);">♡</div>
+        <div class="heart" style="animation: 9s ease-in 0s infinite normal none running spin; top: 33vh; left: 26vw; font-size: 25px; color: rgb(221, 0, 0);">♡</div>
+        <div class="heart" style="animation: 8s ease-in 0s infinite normal none running spin; top: 36vh; left: 46vw; font-size: 58px; color: rgb(255, 204, 204);">♥</div>
+        <div class="heart" style="animation: 17s ease-in 0s infinite normal none running spin; top: 7vh; left: 64vw; font-size: 41px; color: rgb(221, 0, 0);">♡</div>
+        <div class="heart" style="animation: 17s ease-in 0s infinite normal none running spin; top: 3vh; left: 93vw; font-size: 20px; color: rgb(238, 102, 102);">♡</div>
+        <div class="heart" style="animation: 19s ease-in 0s infinite normal none running spin; top: 35vh; left: 41vw; font-size: 45px; color: rgb(221, 0, 0);">♡</div>
+        <div class="heart" style="animation: 14s ease-in 0s infinite normal none running spin; top: 39vh; left: 98vw; font-size: 54px; color: rgb(221, 0, 0);">♥</div>
+        <div class="heart" style="animation: 15s ease-in 0s infinite normal none running spin; top: 25vh; left: 75vw; font-size: 26px; color: rgb(255, 204, 204);">♡</div>
+        <div class="heart" style="animation: 17s ease-in 0s infinite normal none running spin; top: 16vh; left: 70vw; font-size: 45px; color: rgb(221, 0, 0);">♥</div>
+        <div class="heart" style="animation: 12s ease-in 0s infinite normal none running spin; top: 28vh; left: 78vw; font-size: 44px; color: rgb(238, 102, 102);">♡</div>
+        <div class="heart" style="animation: 14s ease-in 0s infinite normal none running spin; top: 15vh; left: 7vw; font-size: 23px; color: rgb(221, 0, 0);">♡</div>
+        <div class="heart" style="animation: 15s ease-in 0s infinite normal none running spin; top: 28vh; left: 90vw; font-size: 23px; color: rgb(255, 204, 204);">♡</div>
+        <div class="heart" style="animation: 11s ease-in 0s infinite normal none running spin; top: 23vh; left: 93vw; font-size: 31px; color: rgb(255, 204, 204);">♥</div><div class="heart" style="animation: 13s ease-in 0s infinite normal none running spin; top: 1vh; left: 19vw; font-size: 59px; color: rgb(221, 0, 0);">♥</div>
+        <div class="heart" style="animation: 12s ease-in 0s infinite normal none running spin; top: 37vh; left: 37vw; font-size: 44px; color: rgb(255, 204, 204);">♡</div>
+        <div class="heart" style="animation: 18s ease-in 0s infinite normal none running spin; top: 9vh; left: 59vw; font-size: 54px; color: rgb(238, 102, 102);">♥</div>
+        <div class="heart" style="animation: 18s ease-in 0s infinite normal none running spin; top: 38vh; left: 74vw; font-size: 29px; color: rgb(255, 204, 204);">♡</div>
     </div>
+    <section class="hidden">
+        <h1>HAPPY VALENTINES DAY MATI!</h1>
+        <div id="heart"></div>
+    </section>
+
+    <section class="hidden">
+        <h2>We've...</h2>
+        <p>known each other for ... days</p>
+        <p>dated each other for ... days</p> <!--tooltip for the exact minutes-->
+        <p>married each other for ... days</p>
+    </section>
+
+    <section class="hidden">
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <script>
         // Add any JavaScript functionality here, such as smooth scrolling or animations
     </script>
