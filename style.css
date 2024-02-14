@@ -25,6 +25,7 @@ h2 {
   letter-spacing: 0.25em;
   width: 100%;
   color: rgb(255, 255, 255);
+  text-shadow: 0.04em 0.04em 0 #e17171;
 }
 
 p {
@@ -33,10 +34,10 @@ p {
   font-size: 4vw;
   text-align: left;
   margin-bottom: 0;
-  margin-left: 14vw;
+  margin-left: 6vw;
   text-transform: uppercase;
-  width: 100%;
   color: rgb(255, 255, 255);
+  width: fit-content;
 }
 
 body {
@@ -70,7 +71,7 @@ body {
 
 section {
   display: grid;
-  place-items: center;
+  /*place-items: center;*/
   align-content: center;
   min-height: 100vh;
 }
@@ -81,6 +82,66 @@ section {
   inset: 0 0 0 0;
   pointer-events: none;
 }
+
+#since_date {
+  display: inline;
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 4vw;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.dropdown-option {
+  list-style: none;
+  visibility: hidden;
+  margin: 0;
+  z-index: -1;
+  overflow: hidden;
+  padding:0;
+}
+
+#since_date-day {
+  width: fit-content;
+  display: inline;
+}
+
+#since_date-day:hover + .dropdown-option{
+  visibility: visible;
+  animation: slideDown 300ms ease-in-out forwards;
+}
+
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-0.5em);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#dropdown {
+  display: inline;
+  margin-top: 1em;
+}
+
+#spacer {
+  display: inline;
+  margin-top: 0;
+  width: fit-content;
+  float: left;
+  z-index: 42;
+  height: 15vh;
+}
+
 
 .heart {
   pointer-events: none;
@@ -109,9 +170,13 @@ section {
   }
 }
 
+a {
+  text-align: center;
+}
+
 .timeline {
   position: relative;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -195,7 +260,7 @@ section {
 .hidden {
   opacity: 0;
   filter: blur(5px);
-  transform: translateY(70%);
+  transform: translateY(60%);
   transition: all 1s;
 }
 
