@@ -170,6 +170,10 @@ section {
   }
 }
 
+#book {
+  margin-top: 0;
+}
+
 a {
   text-align: center;
 }
